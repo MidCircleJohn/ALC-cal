@@ -9,11 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('tian1.jpg'); /* 替换为你的背景图路径 */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
+            background-color: white;
         }
         
         .container {
@@ -23,7 +19,7 @@
             border: 1px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.9); /* 设置主体内容背景为半透明 */
+            background-color: white;
         }
         
         h1 {
@@ -61,9 +57,23 @@
         .result {
             margin-top: 20px;
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+            background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 4px;
+        }
+        
+        .image-display {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        .image-display img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -92,6 +102,10 @@
             <button type="button" onclick="calculate()">计算代谢时间</button>
         </form>
         <div class="result" id="result"></div>
+    </div>
+    
+    <div class="image-display">
+        <img src="tian.jpg" alt="展示图片" />
     </div>
 
     <script>
